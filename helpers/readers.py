@@ -11,3 +11,14 @@ def readIntArray():
         res.append(int(input(f'Enter arr[{i}]:\t')))
 
     return res
+
+
+def readIntSet():
+    res = set()
+
+    array_length = int(input('Enter a number of items in array:\t'))
+
+    for i in range(array_length):
+        res.add(int(input(f'Enter arr[{i}]:\t')))
+
+    return res
