@@ -1,3 +1,6 @@
+import random
+
+
 def countNumberOccurrences(array, number):
     res = 0
 
@@ -21,3 +24,7 @@ def findNumberClosestElement(array, number):
             res_distance = abs(number - x)
 
     return res_idx, res_distance
+
+
+def generateIntArray(length=10, arr_min=0, arr_max=10):
+    return [random.randint(arr_min, arr_max) for _ in range(length)]
